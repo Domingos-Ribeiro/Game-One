@@ -16,5 +16,10 @@ namespace FirstApp
         {
             InitializeComponent();
         }
+
+        private void btn_Welcome_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Welcome")
+        }
     }
 }
