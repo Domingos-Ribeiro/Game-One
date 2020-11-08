@@ -34,6 +34,7 @@
             this.pic_Title = new System.Windows.Forms.PictureBox();
             this.btn_Welcome = new System.Windows.Forms.Button();
             this.btn_Exit = new System.Windows.Forms.Button();
+            this.lbl_Name = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pic_Title)).BeginInit();
             this.SuspendLayout();
             // 
@@ -41,7 +42,7 @@
             // 
             this.lbl_Title.AutoSize = true;
             this.lbl_Title.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_Title.Location = new System.Drawing.Point(197, 46);
+            this.lbl_Title.Location = new System.Drawing.Point(197, 26);
             this.lbl_Title.Name = "lbl_Title";
             this.lbl_Title.Size = new System.Drawing.Size(253, 25);
             this.lbl_Title.TabIndex = 0;
@@ -56,6 +57,7 @@
             // 
             // pic_Title
             // 
+            this.pic_Title.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pic_Title.Image = ((System.Drawing.Image)(resources.GetObject("pic_Title.Image")));
             this.pic_Title.Location = new System.Drawing.Point(71, 169);
             this.pic_Title.Name = "pic_Title";
@@ -83,12 +85,22 @@
             this.btn_Exit.UseVisualStyleBackColor = true;
             this.btn_Exit.Click += new System.EventHandler(this.btn_Exit_Click);
             // 
+            // lbl_Name
+            // 
+            this.lbl_Name.AutoSize = true;
+            this.lbl_Name.Location = new System.Drawing.Point(266, 64);
+            this.lbl_Name.Name = "lbl_Name";
+            this.lbl_Name.Size = new System.Drawing.Size(106, 13);
+            this.lbl_Name.TabIndex = 5;
+            this.lbl_Name.Text = "Whats is your name?";
+            // 
             // FirstApp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.CornflowerBlue;
             this.ClientSize = new System.Drawing.Size(634, 546);
+            this.Controls.Add(this.lbl_Name);
             this.Controls.Add(this.btn_Exit);
             this.Controls.Add(this.btn_Welcome);
             this.Controls.Add(this.pic_Title);
@@ -110,6 +122,7 @@
         private System.Windows.Forms.PictureBox pic_Title;
         private System.Windows.Forms.Button btn_Welcome;
         private System.Windows.Forms.Button btn_Exit;
+        private System.Windows.Forms.Label lbl_Name;
     }
 }
 
