@@ -19,7 +19,12 @@ namespace FirstApp
 
         private void btn_Welcome_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Welcome")
+            MessageBox.Show("Welcome");
+        }
+
+        private void btn_Exit_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
